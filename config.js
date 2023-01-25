@@ -79,13 +79,13 @@ global.author = '6285801284666' //ur sticker watermark author
 
 
 
-global.thumz = 'https://preview.redd.it/32gk0x3qumf41.jpg?auto=webp&s=4b2dd520e0870422e77b6861aad5f29876c50a60' //ur thumb pic
+global.thumz = 'https://i.pinimg.com/736x/d5/95/57/d59557f189703f445755c973e4a4f7b7.jpg' //ur thumb pic
 
-global.logoz = 'https://preview.redd.it/32gk0x3qumf41.jpg?auto=webp&s=4b2dd520e0870422e77b6861aad5f29876c50a60' //ur logo pic
+global.logoz = 'https://i.pinimg.com/736x/d5/95/57/d59557f189703f445755c973e4a4f7b7.jpg' //ur logo pic
 
-global.err4rz = 'https://preview.redd.it/32gk0x3qumf41.jpg?auto=webp&s=4b2dd520e0870422e77b6861aad5f29876c50a60' //ur error pic
+global.err4rz = 'https://i.pinimg.com/736x/d5/95/57/d59557f189703f445755c973e4a4f7b7.jpg' //ur error pic
 
-global.thumbz = 'https://preview.redd.it/32gk0x3qumf41.jpg?auto=webp&s=4b2dd520e0870422e77b6861aad5f29876c50a60' //ur thumb pic
+global.thumbz = 'https://i.pinimg.com/736x/d5/95/57/d59557f189703f445755c973e4a4f7b7.jpg' //ur thumb pic
 
 
 
