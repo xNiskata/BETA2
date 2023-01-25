@@ -135,7 +135,7 @@ global.mess = {
     banChat: 'The bot was banned in this group, please contact the owner to unban'
 }
 
-global.SessName = './session.json'
+global.SessName = './session.alfa.json'
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 let worktypez = process.env.WORKTYPE === undefined ? 'Private' : process.env.WORKTYPE
