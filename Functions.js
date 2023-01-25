@@ -522,11 +522,8 @@ if (autoreadsw) {
 if (global.autoreadpmngc) {
 if (command) {
 await AlienAlfa.sendPresenceUpdate('composing', m.chat)
-AlienAlfa.sendReadReceipt(from, m.sender, [m.key.id])}
 }
-  //autoread gc only
-  if (global.autoReadGc) {
-  if (m.isGroup) { AlienAlfa.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
+
 }
   //auto recording all
     if (global.autoRecord) { if (m.chat) { AlienAlfa.sendPresenceUpdate('recording', m.chat) }
@@ -11137,8 +11134,6 @@ AlienAlfa.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }
 
 try {
 	                let buttonmenu = [
-                        { urlButton: { displayText: linkbuttid1, url: butturl1}},
-                        { urlButton: { displayText: linkbuttid2, url: butturl2}},
                         { quickReplyButton: { displayText: 'All Menu', id: 'allmenu'}},
                         { quickReplyButton: { displayText: 'List Menu', id: 'command'}},
                         { quickReplyButton: { displayText: 'ping', id: 'ping'}}
@@ -11162,8 +11157,6 @@ try {
                     }catch(err){
 
                         let buttonmenu = [
-                            { urlButton: { displayText: linkbuttid1, url: butturl1}},
-                            { urlButton: { displayText: linkbuttid2, url: butturl2}},
                             { quickReplyButton: { displayText: 'All Menu', id: 'allmenu'}},
                             { quickReplyButton: { displayText: 'List Menu', id: 'command'}},
                             { quickReplyButton: { displayText: 'ping', id: 'ping'}}
@@ -12016,7 +12009,6 @@ if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
 sendNye = fs.readFileSync('./Media/theme/DTAG.webp')
-AlienAlfa.sendReadReceipt(m.chat, m.sender, [m.key.id])
 AlienAlfa.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
 //anti-tag 3
@@ -12025,7 +12017,6 @@ if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
 sendNye = fs.readFileSync('./Media/theme/DTAG.webp')
-AlienAlfa.sendReadReceipt(m.chat, m.sender, [m.key.id])
 AlienAlfa.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
 		if (isCmd && budy.toLowerCase() != undefined) {
